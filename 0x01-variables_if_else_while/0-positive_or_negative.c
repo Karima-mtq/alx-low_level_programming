@@ -4,13 +4,16 @@
 
 int main(void)
 {
+	/*
+	 *this script should return n's sign
+	*/
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 
-	if(n > 0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}

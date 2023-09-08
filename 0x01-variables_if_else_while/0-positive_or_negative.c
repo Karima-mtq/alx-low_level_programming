@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(void)
-{
 	/*
 	 *this script should return n's sign
 	*/
+
+int main(void)
+{
 	int n;
 
 	srand(time(0));

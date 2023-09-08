@@ -4,7 +4,7 @@
 
 int main(void)
 {
-int n;
+	int n;
 
 	//Initialize the random number generator with the current time
 	srand(time(0));

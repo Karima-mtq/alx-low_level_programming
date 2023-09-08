@@ -8,11 +8,11 @@
 
 int main(void)
 {
-	char digit;
+	int digit;
 
-	for (digit = '0'; digit <= '9'; digit++)
+	for (digit = 0; digit <= 9; digit++)
 	{
-		putchar(digit);
+		putchar(digit + '0');
 		if ( digit != '9')
 		{
 			putchar(',');

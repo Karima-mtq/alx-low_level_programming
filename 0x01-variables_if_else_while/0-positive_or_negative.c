@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-	/*
-	 * Entry point of the program
-	 *
-	 * Return: Always 0 (Success)
-	 *
-	 *this script should return n's sign
+	/**
+	 *  main - Entry point of the program
+	 *  
+	 *  Return: Always 0 (Success)
 	*/
+
 
 int main(void)
 {

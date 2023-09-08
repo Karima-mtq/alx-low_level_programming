@@ -19,7 +19,7 @@ int main(void)
 	{
 		putchar(digit);
 	}
-	putchar('\n');  // Print a newline character
+	putchar('\n');
 
 	return (0);
 }

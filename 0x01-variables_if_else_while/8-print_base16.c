@@ -8,17 +8,18 @@
 
 int main(void)
 {
-	char l = 'a';
-	for (l='0'; l <= '9'; l++);
-	{
-		putchar(l);
-	}
+	    
+	char digit;
 
-	for (l='a'; l <= 'f'; l++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(l);
+		putchar(digit);
 	}
-	putchar('\n');
+	for (digit = 'a'; digit <= 'f'; digit++)
+	{
+		putchar(digit);
+	}
+	putchar('\n');  // Print a newline character
 
 	return (0);
 }

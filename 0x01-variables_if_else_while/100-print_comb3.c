@@ -19,6 +19,7 @@ int main(void)
 			if (digit != 8 || n != 9)
 			{
 				putchar(',');
+				putchar(' ');
 			}
 		}
 	}

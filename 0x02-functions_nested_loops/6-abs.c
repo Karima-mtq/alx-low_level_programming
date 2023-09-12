@@ -7,15 +7,12 @@
 
 int abs(int n)
 {
-	int i;
-
 	if (n >= 0)
 	{
-		i = n;
+		return (n);
 	}
 	else
 	{
-		i = -n;
+		return (-n);
 	}
-	return (i);
 }

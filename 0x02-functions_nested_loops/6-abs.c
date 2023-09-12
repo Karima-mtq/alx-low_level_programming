@@ -13,7 +13,7 @@ int abs(int n)
 	}
 	else
 	{
-		i = -n
+		i = -n;
 	}
 	return (i);
 }

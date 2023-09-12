@@ -7,7 +7,7 @@
  * Return: from n to 98 or from 98 to n
  */
 
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	int i;
 

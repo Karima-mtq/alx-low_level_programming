@@ -1,0 +1,4 @@
+#!/bin/bash
+character='0'
+ascii_value=$(printf '%d' "'$character")
+echo "La valeur ASCII de '$character' est $ascii_value"

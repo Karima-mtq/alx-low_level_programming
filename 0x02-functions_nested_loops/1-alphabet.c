@@ -5,6 +5,9 @@
  * Return: Always 0 (Success)
 */
 
+/**
+ *print_alphabet is a finction that print all lowercase alphabets
+ */
 void print_alphabet(void)
 {
 	char letter;

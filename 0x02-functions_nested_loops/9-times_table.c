@@ -27,6 +27,10 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if( p <= 10)
+				{
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');

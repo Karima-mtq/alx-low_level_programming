@@ -2,8 +2,8 @@
 /**
  * print_alphabet - Entry point
  *
- * Return: void 
-*/
+ * Return: void
+ */
 
 void print_alphabet(void)
 {

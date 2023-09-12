@@ -5,11 +5,12 @@
  * Return: Always 0 (Success)
 */
 
-/**
- *print_alphabet is a finction that print all lowercase alphabets
- */
 void print_alphabet(void)
 {
+	/**
+	 * Function print_alphabet prints alphabets in lowercase
+	 */
+
 	char letter;
 
 	for (letter = 'a'; letter <= 'z'; letter++)

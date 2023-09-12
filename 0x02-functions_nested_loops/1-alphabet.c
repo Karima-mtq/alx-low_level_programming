@@ -1,15 +1,9 @@
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
-*/
-
 #include "main.h"
 /**
- * print_alphabet - Prints lowercase alphabets.
+ * print_alphabet - Entry point
  *
- * This function prints lowercase alphabets from 'a' to 'z' using putchar.
- */
+ * Return: void 
+*/
 
 void print_alphabet(void)
 {

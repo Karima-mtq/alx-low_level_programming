@@ -5,7 +5,7 @@
  * Return: int n or -n
  */
 
-int abs(int n)
+int _abs(int)
 {
 	if (n >= 0)
 	{

@@ -1,15 +1,16 @@
-#include "main.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
 */
 
+#include "main.h"
+/**
+ * Function print_alphabet prints alphabets in lowercase
+ */
+
 void print_alphabet(void)
 {
-	/**
-	 * Function print_alphabet prints alphabets in lowercase
-	 */
 
 	char letter;
 

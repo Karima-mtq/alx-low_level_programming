@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - Entry point
+ * _islower - Entry point
  *
- * Return: void
+ * Return: int 1 or 0
  */
 
 int _islower(int c)
@@ -16,8 +16,7 @@ int _islower(int c)
 		{
 			j = 1;
 		}
-		
 	}
 
-	return j;
+	return (j);
 }

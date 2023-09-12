@@ -6,7 +6,9 @@
 
 #include "main.h"
 /**
- * Function print_alphabet prints alphabets in lowercase
+ * print_alphabet - Prints lowercase alphabets.
+ *
+ * This function prints lowercase alphabets from 'a' to 'z' using putchar.
  */
 
 void print_alphabet(void)

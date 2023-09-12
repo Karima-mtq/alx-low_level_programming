@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_sign - Entry point
+ * print_sign - Entry point
  * @n: the character to be checked
  * Return: int 1 or 0 or -1
  */

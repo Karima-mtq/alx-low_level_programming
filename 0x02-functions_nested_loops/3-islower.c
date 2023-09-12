@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - Entry point
- *@c the character to be checked
+ * @c: the character to be checked
  * Return: int 1 or 0
  */
 

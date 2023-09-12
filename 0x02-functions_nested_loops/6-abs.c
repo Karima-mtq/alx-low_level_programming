@@ -7,6 +7,8 @@
 
 int abs(int n)
 {
+	int i;
+
 	if (n >= 0)
 	{
 		i = n;

@@ -7,30 +7,35 @@
 
 void times_table(void)
 {
-	int i, j, n = 0, p;
+    int i, j, n;
 
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j < 10; j++)
-		{
-			p = j * n;
-			if (p >= 10)
-			{
-				_putchar(p / 10 + '0');
-				_putchar(p % 10 + '0');
-			}
-			else
-			{
-				_putchar(' ');
-				_putchar(p + '0');
-			}
-			if (j != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
-		_putchar('\n');
-		n++;
-	}
+    for (i = 0; i <= 9; i++)
+    {
+        n = 1;  // Initialize n to 1 for the first column
+        for (j = 0; j <= 9; j++)
+        {
+            int product = i * n;
+
+            if (j != 0)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+
+            if (product < 10)
+            {
+                _putchar(' '); // Add a space for alignment
+            }
+            else
+            {
+                _putchar(product / 10 + '0');
+            }
+
+            _putchar(product % 10 + '0');
+
+            n++; // Increment n for the next column
+        }
+        _putchar('\n');
+    }
 }
+

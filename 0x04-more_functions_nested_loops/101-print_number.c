@@ -7,26 +7,30 @@
 
 void print_number(int n)
 {
-	int divisor = 1;
-	int is_negative = 0;
+	unsigned int a, b, count, tmp, pow;
+
+	a = n;
+	pow = b = 1;
 
 	if (n < 0)
 	{
-		is_negative = 1;
-		n = -n;
-	}
-	while (n / divisor >= 10)
-	{
-		divisor *= 10;
-	}
-	if (is_negative)
-	{
+		a = a * -1;
 		_putchar('-');
 	}
-	while (divisor != 0)
+	tmp = a;
+
+	while (tmp > 9)
 	{
-		_putchar((n / divisor) + '0');
-		n %= divisor;
-	divisor /= 10;
+		b++;
+		tmp = tmp / 10;
 	}
+	for (count = 1; count < b; count++)
+		pow = pow * 10;
+
+	while (pow > 1)
+	{
+		_putchar((a / pow) % 10 + '0');
+			pow = pow / 10;
+	}
+	_putchar(a % 10 + '0');
 }

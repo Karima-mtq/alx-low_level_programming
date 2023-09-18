@@ -1,28 +1,19 @@
 #include "main.h"
 
 /**
- * puts2 - function that returns the length of a string
+ * _puts - function that returns the length of a string
  * @str: the string
  * Return: integer length
  */
 
-void puts2(char *str)
+void _puts(char *str)
 {
-	int i, l = 0;
 
-	while (str[l] != '\0')
+	while (*str != '\0')
 	{
-		l++;
-	}
-
-	for ( i = 0; i < l; i += 2)
-	{
-		if ( *str[i] == "\O")
-		{
-			break;
-		}
-		else
-			_putchar(str[i]);
+		if( *str != "\0")
+			_putchar(*str);
+		str = str + 2;
 	}
 	_putchar('\n');
 }

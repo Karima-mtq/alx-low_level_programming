@@ -17,7 +17,7 @@ void puts2(char *str)
 
 	for ( i = 0; i < l; i += 2)
 	{
-		if ( str[i] == "\O")
+		if ( *str[i] == "\O")
 		{
 			break;
 		}

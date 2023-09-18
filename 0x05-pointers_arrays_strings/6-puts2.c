@@ -1,19 +1,32 @@
 #include "main.h"
 
 /**
- * puts2 - function that returns the length of a string
- * @str: the string
- * Return: integer length
+ * puts2 - Prints every other character of a string, starting with the first.
+ * @str: Pointer to the string.
  */
-
 void puts2(char *str)
 {
+    int i = 0;
+    int ignore_null = 0;
 
-	while (*str != '\0')
-	{
-		if( *str != "\0")
-			_putchar(*str);
-		str = str + 2;
-	}
-	_putchar('\n');
+    while (str[i] != '\0')
+    {
+        if (!ignore_null && str[i] != '\0')
+        {
+            _putchar(str[i]);
+        }
+
+        if (str[i] == '\0' && !ignore_null)
+        {
+            ignore_null = 1;
+        }
+        else if (str[i] != '\0' && ignore_null)
+        {
+            ignore_null = 0;
+        }
+
+        i++;
+    }
+
+    _putchar('\n');
 }

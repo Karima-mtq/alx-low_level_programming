@@ -3,44 +3,44 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * checksum - executes checksum
+ * _sum - addition
  * @s: input char
- * Return: checksum
+ * Return: addition
  */
-unsigned long checksum(char *s)
+unsigned long _sum(char *s)
 {
-unsigned long sum = 0;
+unsigned long somme = 0;
 while (*s != 0)
 {
-	sum += *s;
+	somme += *s;
 	s++;
 }
-return (sum);
+return (somme);
 }
 /**
- * main - prints password for crakme
+ * main - generate password 
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQSTUVWXYZ";
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQSTUVWXYZ";
 	char s[33];
 	unsigned long sum;
-	int i, flag = 0;
+	int i, tst = 0;
 
 	srand(time(NULL));
-	while (flag == 0)
+	while (tst == 0)
 	{
 		for (i = 0; i < 33; i++)
 		{
-			s[i] = alpha[rand() % (sizeof(alpha) - 1)];
+			s[i] = a[rand() % (sizeof(alpha) - 1)];
 		}
 		s[i] = '\0';
-		sum = checksum(s);
+		sum = _sum(s);
 		if (sum == 2772)
 		{
-			flag = 1;
+			tst = 1;
 			printf("%s", s);
 		}
 	}

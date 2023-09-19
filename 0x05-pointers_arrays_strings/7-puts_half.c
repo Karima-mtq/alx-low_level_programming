@@ -1,31 +1,28 @@
 #include "main.h"
 
 /**
- * puts_half - function that prints a string in reverse
- * @str: the string
- * Return: void
+ * puts_half - Prints the second half of a string, followed by a new line.
+ * @str: Pointer to the string.
  */
-
 void puts_half(char *str)
 {
-	int l = 0, n, i;
+	int l = 0;
+	int i, s;
 
-	while ( *str != '\0')
+	while (str[l] != '\0')
 	{
 		l++;
-		str++;
 	}
-
-	if ( l % 2 ) 
+	if (l % 2 == 0)
 	{
-		n = l / 2;
+		s = l / 2;
 	}
 	else
 	{
-		n = (l + 1) / 2;
+		s = (l + 1) / 2;
 	}
 
-	for (i = n; str[i]!='\0'; i++)
+	for (i = s; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}

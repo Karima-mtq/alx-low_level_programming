@@ -34,7 +34,7 @@ int main(void)
 	{
 		for (i = 0; i < 33; i++)
 		{
-			s[i] = a[rand() % (sizeof(alpha) - 1)];
+			s[i] = a[rand() % (sizeof(a) - 1)];
 		}
 		s[i] = '\0';
 		sum = _sum(s);

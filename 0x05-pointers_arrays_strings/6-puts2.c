@@ -7,22 +7,17 @@
 void puts2(char *str)
 {
     int i = 0;
-    int ignore_null = 0;
+    int tst_var = 1;
 
     while (str[i] != '\0')
     {
-        if (!ignore_null && str[i] != '\0')
+        if (tst_var)
         {
             _putchar(str[i]);
         }
 
-        if (str[i] == '\0' && !ignore_null)
-	{
-		break;
-        }
-        
-
-        i += 2;
+        tst_var = !tst_var; 
+        i++;
     }
 
     _putchar('\n');

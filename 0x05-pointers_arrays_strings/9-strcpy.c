@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * strcpy - Prints the second half of a string, followed by a new line.
+ * _strcpy - Prints the second half of a string, followed by a new line.
  * @dest: Pointer
  * @src: Pointer
  * Return: char

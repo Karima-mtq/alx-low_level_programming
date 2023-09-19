@@ -17,13 +17,10 @@ void puts2(char *str)
         }
 
         if (str[i] == '\0' && !ignore_null)
-        {
-            ignore_null = 1;
+	{
+		break;
         }
-        else if (str[i] != '\0' && ignore_null)
-        {
-            ignore_null = 0;
-        }
+        
 
         i += 2;
     }

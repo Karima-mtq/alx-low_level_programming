@@ -1,16 +1,16 @@
 #include "main.h"
 /**
  *leet - change letters by numbers
- *@s1: pointer parameter"
+ *@str: pointer parameter
  *Description: change letters by numbers
  *Return: return pointer
  */
-char *leet(char *s1)
+char *leet(char *str)
 {
 	int j;
-	char *pString = s1;
+	int i = 0;
 
-	char encodes[10][2] = {
+	char table[10][2] = {
 				{'a', '4'},
 				{'A', '4'},
 				{'e', '3'},
@@ -23,18 +23,16 @@ char *leet(char *s1)
 				{'L', '1'}
 				};
 
-	while (*pString != '\0')
+	while (str[i] != '\0')
 	{
 		for (j = 0; j < 10; j++)
 		{
-			char letter = *pString;
-
-			if (letter == encodes[j][0])
+			if (s[i] == table[j][0])
 			{
-				*pString = encodes[j][1];
+				s[i] = table[j][1];
 			}
 		}
-		pString++;
+		i++;
 	}
-	return (s1);
+	return (str);
 }

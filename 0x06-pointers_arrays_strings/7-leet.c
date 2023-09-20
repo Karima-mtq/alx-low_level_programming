@@ -27,9 +27,9 @@ char *leet(char *str)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == table[j][0])
+			if (str[i] == table[j][0])
 			{
-				s[i] = table[j][1];
+				str[i] = table[j][1];
 			}
 		}
 		i++;

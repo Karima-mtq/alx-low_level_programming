@@ -1,39 +1,40 @@
 #include "main.h"
-
 /**
- * leet - function switch letters
- * @str: string to be switched
- * Return: string
+ *leet - change letters by numbers
+ *@s1: pointer parameter"
+ *Description: change letters by numbers
+ *Return: return pointer
  */
-
-char *leet(char *str)
+char *leet(char *s1)
 {
-	int i = 0;
-	int j = 0;
+	int j;
+	char *pString = s1;
 
-	char table[10][2] = {
-		{'a', '4'},
-		{'A', '4'},
-		{'e', '3'},
-		{'E', '3'},
-		{'o', '0'},
-		{'O', '0'},
-		{'t', '7'},
-		{'T', '7'},
-		{'l', '1'},
-		{'L', '1'}
-	};
+	char encodes[10][2] = {
+				{'a', '4'},
+				{'A', '4'},
+				{'e', '3'},
+				{'E', '3'},
+				{'o', '0'},
+				{'O', '0'},
+				{'t', '7'},
+				{'T', '7'},
+				{'l', '1'},
+				{'L', '1'}
+				};
 
-	while (str[i] != '\0')
+	while (*pString != '\0')
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (str[i] == table[j][1])
+			char letter = *pString;
+
+			if (letter == encodes[j][0])
 			{
-				str[i] = table[j][2];
+				*pString = encodes[j][1];
 			}
 		}
-		i++;
+		pString++;
 	}
-	return (str);
+	return (s1);
 }

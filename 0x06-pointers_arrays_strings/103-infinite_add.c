@@ -8,7 +8,6 @@ void reverse_string(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char temp;
 
 	while (s[i] != '\0')
 	{
@@ -16,7 +15,7 @@ void reverse_string(char *s)
 	}
 	while (j < i)
 	{
-		int temp = s[j];
+		char temp = s[j];
 
 		s[j] = s[i];
 		s[i] = temp;
@@ -71,6 +70,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (digits == size_r)
 		return (0);
 	*(r + digits) = '\0';
-	rev_string(r);
+	reverse_string(r);
 	return (r);
 }

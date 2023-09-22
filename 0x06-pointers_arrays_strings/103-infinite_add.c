@@ -1,26 +1,26 @@
 #include "main.h"
 /**
  * reverse_string - reverse array.
- * @s: The array.
- * Return: void.
+ * @n: The array.
+ * Return: char.
  */
-void reverse_string(char *s)
+void reverse_string(char *n)
 {
 	int i = 0;
 	int j = 0;
+	char temp;
 
-	while (s[i] != '\0')
+	while (*(n + i) != '\0')
 	{
 		i++;
 	}
-	while (j < i)
-	{
-		char temp = s[j];
+	i--;
 
-		s[j] = s[i];
-		s[i] = temp;
-		j++;
-		i--;
+	for (j = 0; j < i; j++, i--)
+	{
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
 	}
 }
 

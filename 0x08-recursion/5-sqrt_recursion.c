@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * tst - function tests if n is square
+ * tst_square - function tests if n is square
  * @i: integer
  * @j: integer
  * Return: integer
  */
 
-int tst(int i, int j)
+int tst_square(int i, int j)
 {
 	if (i * i == j)
 		return (i);
 	if (i * i > j)
 		return (-1);
-	return (tst(i + 1, j));
+	return (tst_square(i + 1, j));
 }
 
 /**
@@ -23,5 +23,5 @@ int tst(int i, int j)
 
 int _sqrt_recursion(int n)
 {
-	return (tst(1, n));
+	return (tst_square(1, n));
 }

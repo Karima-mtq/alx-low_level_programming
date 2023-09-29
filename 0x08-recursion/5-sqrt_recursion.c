@@ -12,7 +12,7 @@ int tst(int i, int j)
 		return (i);
 	if (i * i > j)
 		return (-1);
-	return (tst(i + 1, base));
+	return (tst(i + 1, j));
 }
 
 /**

@@ -5,14 +5,14 @@
   * @j: integer
   * Return: 1 or 0.
   */
-int tst(int i, int j)
+int tst_prime(int i, int j)
 {
 	if (j % i == 0 || j < 2)
 		return (0);
 	else if (i == j - 1)
 		return (1);
 	else if (j > i)
-		return (tst(i + 1, j));
+		return (tst_prime(i + 1, j));
 	return (1);
 }
 /**
@@ -22,5 +22,5 @@ int tst(int i, int j)
   */
 int is_prime_number(int n)
 {
-	return (tst(2, n));
+	return (tst_prime(2, n));
 }

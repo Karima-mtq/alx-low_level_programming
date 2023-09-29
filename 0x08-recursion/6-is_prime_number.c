@@ -12,7 +12,7 @@ int tst(int i, int j)
 	else if (i == j - 1)
 		return (1);
 	else if (j > i)
-		return (checker(i + 1, j));
+		return (tst(i + 1, j));
 	return (1);
 }
 /**

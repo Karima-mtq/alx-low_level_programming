@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-  * tst - tsts recursively if a number is prime
+  * tst_prime - tsts recursively if a number is prime
   * @i: integer
   * @j: integer
   * Return: 1 or 0.

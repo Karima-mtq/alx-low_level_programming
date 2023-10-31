@@ -3,6 +3,10 @@
 #include <stdlib.h>
 
 /**
+ * *str_concat - function
+ * @s1: string
+ * @s2: string
+ * Return: char
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -26,9 +30,9 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 
-	for ( i = 0; i < l; i++)
+	for (i = 0; i < l; i++)
 		*(ptr + i) = *(s1 + i);
-	for ( j = 0; j < k; j++)
+	for (j = 0; j < k; j++)
 		*(ptr + (i + j)) = *(s2 + j);
 
 	*(ptr + l + k) = '\0';

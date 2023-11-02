@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *malloc_checked: function
+ * *malloc_checked - function
  * @b: int
  * Return: void
  */

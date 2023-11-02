@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 #include <string.h>
+#include "main.h"
+
 /**
  * *string_nconcat - function
  * @s1: char
@@ -18,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	l = strlen(s1);
 
 	ptr = malloc(strlen(s1) + n + 1);
-	
+
 	if (ptr == NULL)
 		return (NULL);
 

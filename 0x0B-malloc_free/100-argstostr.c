@@ -23,11 +23,11 @@ char *argstostr(int ac, char **av)
 	}
 
 	str = (char *)malloc(length + 1);
-	
+
 	if (str == NULL)
 		return (NULL);
 
-	for (i=0; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		if (av[i] != NULL)
 		{
@@ -37,6 +37,6 @@ char *argstostr(int ac, char **av)
 			indice++;
 		}
 	}
-	return(str); 
-	
+	return (str);
+
 }

@@ -2,10 +2,10 @@
 #include <stdlib.h>
 /**
   * new_dog - creates a new struct of type dog
-  * @name: name
-  * @age: age
-  * @owner: owner
-  * Return: returns pointer
+  * @name: struct parameter name
+  * @age: struct parameter age
+  * @owner: struct parameter owner
+  * Return: returns pointer to buffer of datatype dog
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -35,4 +35,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i < olen; i++)
 		doggy->owner[i] = owner[i];
 	return (doggy);
-}
+

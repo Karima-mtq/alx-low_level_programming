@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * print_dog - function
- * @dg: strunct's pointer
+ * @d: strunct's pointer
  */
-void print_dog(struct dog *dg)
+void print_dog(struct dog *d)
 {
-	if (dg)
+	if (d)
 	{
-		printf("Name: %s\n", (dg->name != NULL) ? dg->name : "(nil)\n");
-		printf("Age: %f\n", dg->age);
-		printf("Owner: %s\n", (dg->owner != NULL) ? dg->name : "(nil)\n");
+		printf("Name: %s\n", (d->name != NULL) ? d->name : "(nil)\n");
+		printf("Age: %f\n", d->age);
+		printf("Owner: %s\n", (d->owner != NULL) ? d->name : "(nil)\n");
 	}
 }

@@ -1,8 +1,9 @@
 #include "dog.h"
+#include <stdio.h>
 /**
- *
- *
- *
+ * print_dog - function
+ * @dog: struct
+ * @dg: strunct's name
  */
 void print_dog(struct dog *dg)
 {
@@ -11,8 +12,8 @@ void print_dog(struct dog *dg)
 		return;
 	}
 	
-	printf("Name: %s\n", (d->name != NULL) ? d->name : "(nil)\n");
-	printf("Age: %f\n", (d->age >= 0) ? d->age : "(nil)\n");
-	printf("Owner: %s\n",(d->owner != NULL) ? d->owner : "(nil)\n");
+	printf("Name: %s\n", (dg->name != NULL) ? dg->name : "(nil)\n");
+	printf("Age: %f\n", dg->age);
+	printf("Owner: %s\n",(dg->owner != NULL) ? dg->name : "(nil)\n");
 		
 }

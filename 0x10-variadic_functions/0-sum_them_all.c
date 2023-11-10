@@ -1,7 +1,7 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - function 
+ * sum_them_all - function
  *
  * @n: int
  *

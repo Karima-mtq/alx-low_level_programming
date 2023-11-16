@@ -2,7 +2,7 @@
 /**
  * length - calculate length
  * @str: string
- * Retur: int
+ * Return: int
  */
 int length(char *str)
 {

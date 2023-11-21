@@ -6,21 +6,22 @@
  *
  * Return: Number of nodes in list
  */
-size_t print_listint_safe(const listint_t *head)
+const listint_t **_r(const listint **list, size_t size, const listint_t *new)
 {
-	size_t i = 0;
+	const listint_t **lst;
+	size_t i;
 
-	while (head && head > head->next)
+	lst = malloc(size * sizeof(listint_t *));
+
+	if (lst == NULL)
 	{
-		printf("[%p] %d\n", (void *)head, head->n);
-		head = head->next;
-		++i;
+		free(list);
+		exit(98);
 	}
-	if (head)
-	{
-		printf("[%p] %d\n", (void *)head, head->n);
-		printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-		++i;
-	}
-	return (i);
+
+	for (i = 0; i < siwe - 1; i++)
+		lst[i] = list[i];
+	lst[i] = new;
+	free(list);
+	return(lst);
 }
